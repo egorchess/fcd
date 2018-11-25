@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/essential",
+    "eslint:recommended",
+    "@vue/airbnb"
+  ],
+  "rules": {
+    "global-require": "off",
+    "import/no-dynamic-require": "off",
+    "func-names": "off",
+    "consistent-return": "off",
+    "space-before-function-paren": "off",
+    "comma-dangle": "off",
+    "linebreak-style": "off",
+    "prefer-destructuring": "off",
+    "no-param-reassign": "off",
+    "no-undef": "off"
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  }
+}

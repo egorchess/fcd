@@ -1,0 +1,23 @@
+{
+  "name": "fcd",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "init": "echo Устновка зависимостей сервера... && npm i && cd client && echo Установка зависимостей клиента... && npm i",
+    "prod-server": "node server/server-core.js",
+    "build": "cd client && npm run build",
+    "dev-server": "start npm run prod-server && cd client && npm run serve",
+    "lint": "echo Проверка сервера... && npx eslint . && echo No lint errors found! && echo. && echo Проверка клиента... && cd client && npm run lint"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  }
+}
