@@ -1,0 +1,25 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb"
+  ],
+  "rules": {
+    "global-require": "off",
+    "import/no-dynamic-require": "off",
+    "no-console": "off",
+    "func-names": "off",
+    "consistent-return": "off",
+    "space-before-function-paren": "off",
+    "comma-dangle": "off",
+    "linebreak-style": "off",
+    "prefer-destructuring": "off",
+    "no-param-reassign": "off"
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  }
+}
