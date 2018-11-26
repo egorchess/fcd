@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  title: 'Авторизация',
+  title: 'Авторизация'
 };
 </script>
 
