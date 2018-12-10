@@ -1,23 +1,25 @@
 <template>
-  <div><h1>Страница авторизации</h1>
-    <v-button :onClick="testClick">Войти</v-button>
-  </div>
+  <MainButton :text="buttonText" @onClick="handleClick"></MainButton>
 </template>
 
 <script>
-  import Button from './MainButton.vue';
+import MainButton from './MainButton.vue';
 
-  export default {
-    title: 'Авторизация',
-    components: {
-      'v-button': Button
-    },
-    methods: {
-      testClick() {
-        // код обработчика
-      }
+export default {
+  components: {
+    MainButton
+  },
+  data() {
+    return {
+      buttonText: 'Войти'
+    };
+  },
+  methods: {
+    handleClick() {
+      alert('Hello world');
     }
-  };
+  }
+};
 </script>
 
 <style>

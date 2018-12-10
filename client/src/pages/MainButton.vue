@@ -1,19 +1,14 @@
 <template>
-  <button class="main_button" @click="onClick" >
-    <slot>Button</slot>
-  </button>
+  <button class='main_button'  @click="$emit('onClick')">{{text}}</button>
 </template>
 
 <script>
-  export default {
-    name: 'Button',
-    props: {
-      onClick: {
-        type: Function,
-        required: true
-      }
-    }
-  };
+export default {
+  name: 'MainButton',
+  props: {
+    text: String
+  }
+};
 </script>
 
 <style scoped>
